@@ -1,5 +1,6 @@
 # Basic-Gates-using-LT-Spice
-NAND Gate is one of the universal gate. A universal gate is a digital logic gate that can be used to implement any Boolean function without requiring other gates. This repository explains the implementation of NAND Gate in CMOS Logic using LT Spice Simulator. This shows the schematic of NAND Gate and plot the output waveform to verify the functionality.
+
+This repository explains the implementation of Basic Gates in CMOS Logic using LT Spice Simulator. This shows the schematic of Basic Gates and plot the output waveform to verify the functionality.
 
 # Table of Contents
 Introduction
@@ -11,13 +12,15 @@ Simulation Results
 # INTRODUCTION
 A logic gate is a device that performs logical operations on one or more binary inputs and produces a single binary output. The primary way of building logic gates uses diodes or transistors acting as electronic switches. Today, most logic gates are made from MOSFETs (metal–oxide–semiconductor field-effect transistors). Logic circuits include such devices as multiplexers, registers, arithmetic logic units (ALUs), computer memory and microprocessors which may contain more than 100 million logic gates. Basic gates, also known as elementary or fundamental gates, include the AND, OR and NOT gates. These gates operates on binary signals (0s and 1s) and provide the basis for all digit computations. Other gates such as XOR, XNOR, NAND and NOR can be derived from basic gates.
 
-# OBJECTIVES
+Complementary metal–oxide–semiconductor (CMOS) is a type of MOSFET that uses complementary and symmetrical pairs of p-type and n-type MOSFETs for logic functions. CMOS technology is used for constructing integrated circuit (IC) chips, including microprocessors, microcontrollers, memory chips and other digital logic circuits. Two important characteristics of CMOS devices are high noise immunity and low static power consumption.
+
+## OBJECTIVES
 The main goal of this project are given below
 1. To plot the schematics of logic gates, and circuits 
 2. To plot the output waveform 
 3. To verify the functionality
 
-# PROJECT STRUCTURE
+## PROJECT STRUCTURE
 Tool : LTspice
 Technology : C5N technology
 
@@ -39,6 +42,51 @@ The NOT gate is a digital logic device whose output is always the complement of 
 ![image](https://github.com/user-attachments/assets/75f98793-2abf-4971-a744-4f0d1233621f)  ![image](https://github.com/user-attachments/assets/d683b441-be50-40d2-867f-ef4d74c39289)
 
 # LTSPICE SIMULATION
+
+Tool = LT spice Simulator
+Technology = C5N technology file
+Logic Gates = AND, OR, NOT, NAND, NOR 
+VA = PULSE(0 5 0 1n 1n 5u 10u)
+VB = PULSE(0 5 0 1n 1n 10u 20u)
+V1 = 5v
+Spice Directive = .include D:\NIELIT\ENGR3426\ENGR3426\engr3426.sub
+Transient = .tran 100u
+
+Inputs: The inputs are VA and VB. VA is applied to one of the PMOS and one of the NMOS. Likewise, VB is applied to one of the PMOS and one of the NMOS.
+
+Output: The output Vout is based on the functionality of logic gates.
+
+PULSE(0 5 1n 1n 5u 10u) is a syntax used to define a pulse waveform for a voltage source VA
+PULSE(0 5 1n 1n 5u 20u) is a syntax used to define a pulse waveform for a voltage source VB
+
+Initial Value (Vintial): 0[V]
+This is the voltage level of the source before the pulse begins.
+
+Pulse Value (Von): 5[V]
+This is the voltage level during the ON period of the pulse.
+
+
+Delay Time (Tdelay): 0[s] 
+This is the delay time from input voltage to output voltage. In this case, there is no delay.
+
+Rise Time (Trise): 1n[s] 
+This is the time taken for the pulse to change from the Initial Value to the Pulse Value.
+
+Fall Time (Tfall): 1n[s] 
+This is the time taken for the pulse to change from the Pulse Value back to the Initial Value.
+On Time (Ton): 5u for VA and 10u for VB
+This is the time for which the pulse on for some period of time
+Period (Tperiod): 10us for VA and 20us for VB
+This is the total time for one complete cycle of the pulse waveform.
+
+Number of Cycles (Ncycles): 10 
+This specifies how many cycles of the pulse waveform should be generated.
+
+Spice Directive: This contains text directly passes to the netlist which is placed on the schematic. The text may be single line or block or lines.
+
+Transient: This analyzes the changes in voltage and current over time when an input signal is applied.
+
+So, with the given inputs, the voltage source will start at 0V, then immediately rise to 5V. It will remain at 5V upto 5us for VA and 10us for VB, then drop back down to 0V. The total period for one complete cycle of this waveform is 10us for VA and 20us for VB. This cycle will repeat 10 times.
 
 ![image](https://github.com/user-attachments/assets/26c776f8-aa80-42a1-a93b-09903502a345)
 
