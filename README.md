@@ -21,11 +21,6 @@ The main goal of this project are given below
 Tool : LTspice
 Technology : C5N technology
 
-Report PDF: Documentation of the design and analysis results.
-EC5030_DesignProject_2020e050.pdf: Detailed report on the control system designs.
-LTspice Simulation Files: .asc files for LTspice simulations of each controller.
-p_controller.asc: LTspice simulation file for the P controller.
-
 # CIRCUIT DETAILS
 
 The output of AND gate produces 1 if and only if all the input states are 1 else it produces 0. The logic symbol and truth table of 2-input AND gate is shown below.
