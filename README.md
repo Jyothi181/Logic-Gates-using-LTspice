@@ -37,6 +37,8 @@ The output of AND gate produces 1 if and only if all the input states are 1 else
 Figure 1: Logic Symbol, Truth table and Logic Circuit of AND gate
 
 
+
+
 The output of OR gate produces 1 if one or more input states are 1 else it produces 0. The logic symbol and truth table of 2-input OR gate is shown below.
 
 ![image](https://github.com/user-attachments/assets/f43f1257-c6c0-4bfb-9b90-ab726dcbd6de)   ![image](https://github.com/user-attachments/assets/211df32d-a96f-4dee-9df7-3786fb3eb088)
@@ -44,11 +46,15 @@ The output of OR gate produces 1 if one or more input states are 1 else it produ
 Figure 2: Logic Symbol, Truth table and Logic Circuit of OR gate
 
 
+
+
 The NOT gate is a digital logic device whose output is always the complement of its input. The NOT gate can be implemented in CMOS logic by connecting PMOS to VDD which acts as Pull Up Network (PUN) and NMOS is connected to ground which acts as Pull Down Network (PDN). The logic symbol, truth table and CMOS implementation of NOT gate is shown below.
 
 ![image](https://github.com/user-attachments/assets/75f98793-2abf-4971-a744-4f0d1233621f)  ![image](https://github.com/user-attachments/assets/d683b441-be50-40d2-867f-ef4d74c39289)
 
 Figure 3: Logic Symbol, Truth table and Logic Circuit of NOT gate
+
+
 
 
 # LTSPICE SIMULATION
@@ -110,6 +116,8 @@ The AND gate can be obtained by connecting output of NAND gate to an inverter.
 Figure 4: LTspice Schematic of AND gate
 
 
+
+
 PUN : C5NPMOS in series
 PDN : C5NNMOS in parallel
 The OR gate can be obtained by connecting the output of NOR gate to an inverter.
@@ -119,12 +127,17 @@ The OR gate can be obtained by connecting the output of NOR gate to an inverter.
 Figure 5: LTspice Schematic of OR gate
 
 
+
+
 PUN : C5NPMOS
 PDN : C5NNMOS
 
 ![image](https://github.com/user-attachments/assets/bd57856a-a1a0-442e-8e61-975c2f24ce98)
 
 Figure 6: LTspice Schematic of NOT gate
+
+
+
 
 # SIMULATION RESULTS
 
