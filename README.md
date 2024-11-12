@@ -6,7 +6,6 @@ This repository explains the implementation of Basic Gates in CMOS Logic using L
 Introduction
 Objectives
 Circuit Details
-Working
 Simulation Results
 
 # INTRODUCTION
@@ -27,6 +26,14 @@ The main goal of this project are given below
 ## PROJECT STRUCTURE
 Tool : LTspice
 Technology : C5N technology
+
+Report PDF: Documentation of the design process and analysis results.
+: Detailed report on the .
+
+LTspice Simulation Files: .asc files for LTspice simulations for each logic gate.
+: LTspice simulation file for the AND gate.
+: LTspice simulation file for the OR gate.
+: LTspice simulation file for the NOT gate.
 
 # CIRCUIT DETAILS
 
@@ -62,7 +69,7 @@ Figure 3: Logic Symbol, Truth table and Logic Circuit of NOT gate
 LTspice captures schematics of different circuits and shows the results of simulation by using waveform viewer. Circuit simulation analysis provides the transient, AC and DC analysis.  
 Tool = LT spice Simulator
 Technology = C5N technology file
-Logic Gates = AND, OR, NOT, NAND, NOR 
+Logic Gates = AND, OR and NOT 
 VA = PULSE(0 5 0 1n 1n 5u 10u)
 VB = PULSE(0 5 0 1n 1n 10u 20u)
 V1 = 5v
@@ -74,7 +81,7 @@ Inputs: The inputs are VA and VB. VA is applied to one of the PMOS and one of th
 Output: The output Vout is based on the functionality of logic gates.
 
 PULSE(0 5 1n 1n 5u 10u) is a syntax used to define a pulse waveform for a voltage source VA
-PULSE(0 5 1n 1n 5u 20u) is a syntax used to define a pulse waveform for a voltage source VB
+PULSE(0 5 1n 1n 10u 20u) is a syntax used to define a pulse waveform for a voltage source VB
 
 Initial Value (Vintial): 0[V]
 This is the voltage level of the source before the pulse begins.
