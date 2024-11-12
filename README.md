@@ -27,13 +27,10 @@ The main goal of this project are given below
 Tool : LTspice
 Technology : C5N technology
 
-Report PDF: Documentation of the design process and analysis results.
-: Detailed report on the .
-
-LTspice Simulation Files: .asc files for LTspice simulations for each logic gate.
-: LTspice simulation file for the AND gate.
-: LTspice simulation file for the OR gate.
-: LTspice simulation file for the NOT gate.
+LTspice Simulation Files: Files with .asc extension represents LTspice simulation files for each logic gate.
+AND.asc : LTspice simulation file for the AND gate.
+OR.asc : LTspice simulation file for the OR gate.
+NOT.asc : LTspice simulation file for the NOT gate.
 
 # CIRCUIT DETAILS
 
@@ -148,7 +145,7 @@ Figure 6: LTspice Schematic of NOT gate
 
 # SIMULATION RESULTS
 
-The pulse rise from 0 to 5v. Depending on the pulse width and period settings, the pulse will repeat at regular intervals. The generated output is based on the applied inputs VA, VB and the logic functionality. The graphs VA - V(n002), VB - V(n002), Vout - V(vout) represent the inputs and output respectively with different colours. The simulation results verifies the functionality of the circuits.  
+The pulse rise from 0 to 5v. Depending on the pulse width and period settings, the pulse will repeat at regular intervals. The generated output is based on the applied inputs VA, VB and the logic functionality. The graphs VA - V(n002), VB - V(n003), Vout - V(vout) represent the inputs and output respectively with different colours. The simulation results verifies the functionality of the circuits.  
 
 ![image](https://github.com/user-attachments/assets/9c399522-1621-452f-b7f9-81a54d1d51c2)
 
