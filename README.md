@@ -34,22 +34,26 @@ The output of AND gate produces 1 if and only if all the input states are 1 else
 
 ![image](https://github.com/user-attachments/assets/e58eb1ee-58d5-4565-8813-a40ad05e960b)  ![image](https://github.com/user-attachments/assets/516544f5-eda3-4d6c-8f04-072f829f78d4)
                                                                                                                                                                                                              
-                                            Figure 1: Logic Symbol, Truth table and Logic Circuit of AND gate
+Figure 1: Logic Symbol, Truth table and Logic Circuit of AND gate
+
 
 The output of OR gate produces 1 if one or more input states are 1 else it produces 0. The logic symbol and truth table of 2-input OR gate is shown below.
 
 ![image](https://github.com/user-attachments/assets/f43f1257-c6c0-4bfb-9b90-ab726dcbd6de)   ![image](https://github.com/user-attachments/assets/211df32d-a96f-4dee-9df7-3786fb3eb088)
 
-                                            Figure 2: Logic Symbol, Truth table and Logic Circuit of OR gate
+Figure 2: Logic Symbol, Truth table and Logic Circuit of OR gate
+
 
 The NOT gate is a digital logic device whose output is always the complement of its input. The NOT gate can be implemented in CMOS logic by connecting PMOS to VDD which acts as Pull Up Network (PUN) and NMOS is connected to ground which acts as Pull Down Network (PDN). The logic symbol, truth table and CMOS implementation of NOT gate is shown below.
 
 ![image](https://github.com/user-attachments/assets/75f98793-2abf-4971-a744-4f0d1233621f)  ![image](https://github.com/user-attachments/assets/d683b441-be50-40d2-867f-ef4d74c39289)
 
-                                           Figure 3: Logic Symbol, Truth table and Logic Circuit of NOT gate
+Figure 3: Logic Symbol, Truth table and Logic Circuit of NOT gate
+
 
 # LTSPICE SIMULATION
 
+LTspice captures schematics of different circuits and shows the results of simulation by using waveform viewer. Circuit simulation analysis provides the transient, AC and DC analysis.  
 Tool = LT spice Simulator
 Technology = C5N technology file
 Logic Gates = AND, OR, NOT, NAND, NOR 
@@ -96,11 +100,31 @@ Transient Analysis: This analyzes the changes in voltage and current over time w
 
 So, with the given inputs, the voltage source will start at 0V, then immediately rise to 5V. It will remain at 5V upto 5us for VA and 10us for VB, then drop back down to 0V. The total period for one complete cycle of this waveform is 10us for VA and 20us for VB. This cycle will repeat 10 times.
 
+
+PUN : Two C5NPMOS are connected in parallel
+PDN : Two C5NNMOS are connected in series
+The AND gate can be obtained by connecting output of NAND gate to an inverter.
+
 ![image](https://github.com/user-attachments/assets/26c776f8-aa80-42a1-a93b-09903502a345)
+
+Figure 4: LTspice Schematic of AND gate
+
+
+PUN : C5NPMOS in series
+PDN : C5NNMOS in parallel
+The OR gate can be obtained by connecting the output of NOR gate to an inverter.
 
 ![image](https://github.com/user-attachments/assets/9f8fca88-708e-4f45-8e0a-c03172b4fbdf)
 
+Figure 5: LTspice Schematic of OR gate
+
+
+PUN : C5NPMOS
+PDN : C5NNMOS
+
 ![image](https://github.com/user-attachments/assets/bd57856a-a1a0-442e-8e61-975c2f24ce98)
+
+Figure 6: LTspice Schematic of NOT gate
 
 # SIMULATION RESULTS
 
@@ -108,10 +132,15 @@ The pulse rise from 0 to 5v. Depending on the pulse width and period settings, t
 
 ![image](https://github.com/user-attachments/assets/9c399522-1621-452f-b7f9-81a54d1d51c2)
 
+Figure 7: Simulated waveform of AND gate
+
 ![image](https://github.com/user-attachments/assets/ad43d981-ab06-4594-ac8c-0bf227bcce69)
+
+Figure 8: Simulated waveform of OR gate
 
 ![image](https://github.com/user-attachments/assets/f1db1ad2-8edb-4c54-a726-c0b860ae9479)
 
+Figure 9: Simulated waveform of NOT gate
 
 
 
