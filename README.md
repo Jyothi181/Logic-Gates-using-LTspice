@@ -33,17 +33,20 @@ Technology : C5N technology
 The output of AND gate produces 1 if and only if all the input states are 1 else it produces 0. The logic symbol and truth table of 2-input AND gate is shown below.
 
 ![image](https://github.com/user-attachments/assets/e58eb1ee-58d5-4565-8813-a40ad05e960b)  ![image](https://github.com/user-attachments/assets/516544f5-eda3-4d6c-8f04-072f829f78d4)
-
-
+                                                                                                                                                                                                             
+                                            Figure 1: Logic Symbol, Truth table and Logic Circuit of AND gate
 
 The output of OR gate produces 1 if one or more input states are 1 else it produces 0. The logic symbol and truth table of 2-input OR gate is shown below.
 
 ![image](https://github.com/user-attachments/assets/f43f1257-c6c0-4bfb-9b90-ab726dcbd6de)   ![image](https://github.com/user-attachments/assets/211df32d-a96f-4dee-9df7-3786fb3eb088)
 
+                                            Figure 2: Logic Symbol, Truth table and Logic Circuit of OR gate
 
 The NOT gate is a digital logic device whose output is always the complement of its input. The NOT gate can be implemented in CMOS logic by connecting PMOS to VDD which acts as Pull Up Network (PUN) and NMOS is connected to ground which acts as Pull Down Network (PDN). The logic symbol, truth table and CMOS implementation of NOT gate is shown below.
 
 ![image](https://github.com/user-attachments/assets/75f98793-2abf-4971-a744-4f0d1233621f)  ![image](https://github.com/user-attachments/assets/d683b441-be50-40d2-867f-ef4d74c39289)
+
+                                           Figure 3: Logic Symbol, Truth table and Logic Circuit of NOT gate
 
 # LTSPICE SIMULATION
 
@@ -69,7 +72,6 @@ This is the voltage level of the source before the pulse begins.
 Pulse Value (Von): 5[V]
 This is the voltage level during the ON period of the pulse.
 
-
 Delay Time (Tdelay): 0[s] 
 This is the delay time from input voltage to output voltage. In this case, there is no delay.
 
@@ -78,9 +80,11 @@ This is the time taken for the pulse to change from the Initial Value to the Pul
 
 Fall Time (Tfall): 1n[s] 
 This is the time taken for the pulse to change from the Pulse Value back to the Initial Value.
+
 On Time (Ton): 5u for VA and 10u for VB
 This is the time for which the pulse on for some period of time
-Period (Tperiod): 10us for VA and 20us for VB
+
+Time period (Tperiod): 10us for VA and 20us for VB
 This is the total time for one complete cycle of the pulse waveform.
 
 Number of Cycles (Ncycles): 10 
@@ -88,7 +92,7 @@ This specifies how many cycles of the pulse waveform should be generated.
 
 Spice Directive: This contains text directly passes to the netlist which is placed on the schematic. The text may be single line or block or lines.
 
-Transient: This analyzes the changes in voltage and current over time when an input signal is applied.
+Transient Analysis: This analyzes the changes in voltage and current over time when an input signal is applied. To apply tansient analysis .tran is used as a keyword. 
 
 So, with the given inputs, the voltage source will start at 0V, then immediately rise to 5V. It will remain at 5V upto 5us for VA and 10us for VB, then drop back down to 0V. The total period for one complete cycle of this waveform is 10us for VA and 20us for VB. This cycle will repeat 10 times.
 
