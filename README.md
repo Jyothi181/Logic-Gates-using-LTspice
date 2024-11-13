@@ -71,8 +71,10 @@ LTspice captures schematics of different circuits and shows the results of simul
 - V1 = 5v
 - Spice Directive = .include D:\NIELIT\ENGR3426\ENGR3426\engr3426.sub
 - Transient = .tran 100u
-- PMOS -> Length = 0.6u, Width = 3.2u
-- NMOS -> Length = 0.6u, Width = 7.2u
+- PMOS -> Length = 0.6u, Width = 7.2u
+- NMOS -> Length = 0.6u, Width = 3.6u
+- PMOS = Pull Up Network (PUN)
+- NMOS = Pull Down Network (PDN)
 
 
 ## Terms Description
@@ -114,7 +116,25 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 
 ## Schematics
 
-Place the circuit elements and include the technology library using spice directive.
+### Steps to draw schematics
+
+1. To create a new schematic -> `File - New Schematic (Ctrl+N)`
+2. Place the transistors using the option Component (P) in the toolbar.
+3. Place the voltage sources and ground from the toolbar and set the values as mentioned above.
+4. Label all the components by using left click on each component.
+5. Make connections by using the option Wire (W) in the toolbar.
+6. Include the technology library using spice directive.
+7. Give the length and width of NMOS and PMOS transistors by selecting the respective transistor.
+
+![image](https://github.com/user-attachments/assets/e26327f6-c26f-4a68-afb4-316aeb6a8fd4)  ![image](https://github.com/user-attachments/assets/a0ded240-ca8b-4795-aa0e-8d28ffb047c7)
+
+***Figure 4: Length and Width of transistors***
+
+8. To verify the transient analysis -> Click on Voltage sources and give the specific values as mentioned above in the Terms Description.
+
+![image](https://github.com/user-attachments/assets/0f1a6705-b141-4cfa-81a6-649b532400b4)
+
+***Figure 5: Transient Analysis values***
 
 ### Schematic of AND Gate
 
@@ -124,7 +144,7 @@ The AND gate can be obtained by connecting output of NAND gate to an inverter.
 
 ![image](https://github.com/user-attachments/assets/26c776f8-aa80-42a1-a93b-09903502a345)
 
-***Figure 4: LTspice Schematic of AND Gate***
+***Figure 6: LTspice Schematic of AND Gate***
 
 ### Schematic of OR Gate
 
@@ -134,7 +154,7 @@ The OR gate can be obtained by connecting the output of NOR gate to an inverter.
 
 ![image](https://github.com/user-attachments/assets/9f8fca88-708e-4f45-8e0a-c03172b4fbdf)
 
-***Figure 5: LTspice Schematic of OR Gate***
+***Figure 7: LTspice Schematic of OR Gate***
 
 ### Schematic of NOT Gate
 
@@ -143,29 +163,30 @@ PDN : C5NNMOS
 
 ![image](https://github.com/user-attachments/assets/bd57856a-a1a0-442e-8e61-975c2f24ce98)
 
-***Figure 6: LTspice Schematic of NOT Gate***
+***Figure 8: LTspice Schematic of NOT Gate***
 
-**Transient Analysis:** To verify the transient analysis. Click on Voltage source and then advanced
-
-![image](https://github.com/user-attachments/assets/0f1a6705-b141-4cfa-81a6-649b532400b4)
-
-***Figure 8: Transient Analysis values***
 
 # Simulation Results
 
+## How to simulate
+- Once the schematic is done, click on `Run/Pause(Alt+R)` to run the schematic.
+- Select the `Add Plot Pane Above` option by left click on the waveform window. Add 3 panes for 2 inputs and 1 output.
+- To plot the graphs, click on the each input and output nodes and specific pane.
+
+## Results
 The pulse rises from 0 to 5v. Depending on the pulse width and period settings, the pulse will repeat at regular intervals. The generated output is based on the applied inputs VA, VB and the logic functionality. The graphs VA - V(n002), VB - V(n003), Vout - V(vout) represent the inputs and output respectively with different colours. The simulation results verifies the functionality of the circuits. 
 
 ![image](https://github.com/user-attachments/assets/9c399522-1621-452f-b7f9-81a54d1d51c2)
 
-***Figure 7: Simulated waveform of AND Gate***
+***Figure 9: Simulated waveform of AND Gate***
 
 ![image](https://github.com/user-attachments/assets/ad43d981-ab06-4594-ac8c-0bf227bcce69)
 
-***Figure 8: Simulated waveform of OR Gate***
+***Figure 10: Simulated waveform of OR Gate***
 
 ![image](https://github.com/user-attachments/assets/f1db1ad2-8edb-4c54-a726-c0b860ae9479)
 
-***Figure 9: Simulated waveform of NOT Gate***
+***Figure 11: Simulated waveform of NOT Gate***
 
 
 
