@@ -13,6 +13,8 @@ This repository explains the implementation of Logic Gates in CMOS Logic using L
 - Steps to draw schematics
 - Schematic of AND Gate
 - Schematic of OR Gate
+- Schematic of NAND Gate
+- Schematic of NOR Gate
 - Schematic of NOT Gate
 - Simulation Results
 - How to simulate
