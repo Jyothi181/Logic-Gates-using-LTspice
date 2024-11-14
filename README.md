@@ -19,7 +19,13 @@ This repository explains the implementation of Logic Gates in CMOS Logic using L
 - Results
 
 # Introduction
-**Logic Gate:** A logic gate is a device that performs logical operations on one or more binary inputs and produces a single binary output. The primary way of building logic gates uses diodes or transistors acting as electronic switches. Today, most logic gates are made from MOSFETs (metal–oxide–semiconductor field-effect transistors). Logic circuits include such devices as multiplexers, registers, arithmetic logic units (ALUs), computer memory and microprocessors which may contain more than 100 million logic gates. Basic gates, also known as elementary or fundamental gates, include the AND, OR and NOT gates. These gates operates on binary signals (0s and 1s) and provide the basis for all digit computations. Other gates such as XOR, XNOR, NAND and NOR can be derived from basic gates.
+**Logic Gate:** A logic gate is a device that performs logical operations on one or more binary inputs and produces a single binary output. The primary way of building logic gates uses diodes or transistors acting as electronic switches. Today, most logic gates are made from MOSFETs (metal–oxide–semiconductor field-effect transistors). Logic circuits include such devices as multiplexers, registers, arithmetic logic units (ALUs), computer memory and microprocessors which may contain more than 100 million logic gates.
+
+**Logic Gates** - Basic Gates and Universal Gates
+
+**Basic Gates:** Basic gates, also known as elementary or fundamental gates, include the AND, OR and NOT gates. These gates operates on binary signals (0s and 1s) and provide the basis for all digit computations. Other gates such as XOR, XNOR, NAND and NOR can be derived from basic gates.
+
+**Universal Gates:** A universal gate is a digital logic gate that can be used to implement any Boolean function without requiring other gates. NAND and NOR Gates are universal gates.
 
 **CMOS:** Complementary metal–oxide–semiconductor (CMOS) is a type of MOSFET that uses complementary and symmetrical pairs of p-type and n-type MOSFETs for logic functions. Input is applied at the common gate of PMOS and NMOS transistors.Output is taken from the PMOS and NMOS drain. CMOS technology is used for constructing integrated circuit (IC) chips, including microprocessors, microcontrollers, memory chips and other digital logic circuits. Two important characteristics of CMOS devices are high noise immunity and low static power consumption.
 
@@ -38,9 +44,12 @@ The main goal of this project are given below
 - **Technology :** C5N technology
 
 **LTspice Simulation Files**: Files with .asc extension represents LTspice simulation files for each logic gate.
+
 - **AND.asc :** LTspice simulation file for the AND gate.
 - **OR.asc :** LTspice simulation file for the OR gate.
 - **NOT.asc :** LTspice simulation file for the NOT gate.
+- **NAND.asc :** LTspice simulation file for the NAND gate.
+- **NOR.asc :** LTspice simulation file for the NOR gate.
 
 # Circuit Details
 
@@ -62,13 +71,25 @@ The main goal of this project are given below
 
 **Figure 3: Logic Symbol, Truth table and Logic Circuit of NOT gate**
 
+4. The output of NAND gate produces 1 if any one of the input state is 0 else it produces 0. The logic symbol and truth table of 2-input NAND gate is shown below. 
+
+![image](https://github.com/user-attachments/assets/8c880d34-7bb6-4eee-87e0-e9f333add414)   ![image](https://github.com/user-attachments/assets/ecee8dd2-9d80-4088-a16e-5aca6ef92bf6)
+
+***Figure 4: Logic Symbol, Truth table and Logic Circuit of NAND gate***
+
+5. The output of NOR gate produces 1 if and only if all the input states are 0 else it produces 0. The logic symbol and truth table of 2-input NOR gate is shown below. 
+
+![image](https://github.com/user-attachments/assets/e0e41202-6c15-4019-87f3-a3b22d6a5cc5)   ![image](https://github.com/user-attachments/assets/07be782e-470e-44fe-bb74-e7bb7f320f1b)
+
+***Figure 5: Logic Symbol, Truth table and Logic Circuit of NOR gate***
 
 # LTspice Simulation
 
 LTspice captures schematics of different circuits and shows the results of simulation by using waveform viewer. Circuit simulation analysis provides the transient, AC and DC analysis.  
+
 - Tool = LT spice Simulator
 - Technology = C5N technology file
-- Logic Gates = AND, OR and NOT
+- Logic Gates = AND, OR, NOT, NAND and NOR
 - VA = `PULSE(0 5 0 1n 1n 5u 10u)`
 - VB = `PULSE(0 5 0 1n 1n 10u 20u)`
 - V1 = 5v
@@ -123,13 +144,13 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 
 ![image](https://github.com/user-attachments/assets/e26327f6-c26f-4a68-afb4-316aeb6a8fd4)  ![image](https://github.com/user-attachments/assets/a0ded240-ca8b-4795-aa0e-8d28ffb047c7)
 
-***Figure 4: Length and Width of transistors***
+***Figure 6: Length and Width of transistors***
 
 8. To verify the transient analysis -> Click on Voltage sources and give the specific values as mentioned above in the Terms Description.
 
 ![image](https://github.com/user-attachments/assets/0f1a6705-b141-4cfa-81a6-649b532400b4)
 
-***Figure 5: Transient Analysis values***
+***Figure 7: Transient Analysis values***
 
 
 ### Schematic of AND Gate
@@ -145,7 +166,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 
 ![image](https://github.com/user-attachments/assets/26c776f8-aa80-42a1-a93b-09903502a345)
 
-***Figure 6: LTspice Schematic of AND Gate***
+***Figure 8: LTspice Schematic of AND Gate***
 
 ### Schematic of OR Gate
 - M1,M2 and M6 are PMOS transistors
@@ -159,7 +180,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 
 ![image](https://github.com/user-attachments/assets/9f8fca88-708e-4f45-8e0a-c03172b4fbdf)
 
-***Figure 7: LTspice Schematic of OR Gate***
+***Figure 9: LTspice Schematic of OR Gate***
 
 ### Schematic of NOT Gate
 
@@ -173,8 +194,33 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 
 ![image](https://github.com/user-attachments/assets/bd57856a-a1a0-442e-8e61-975c2f24ce98)
 
-***Figure 8: LTspice Schematic of NOT Gate***
+***Figure 10: LTspice Schematic of NOT Gate***
 
+### Schematic of NAND Gate
+- M3 and M4 are PMOS transistors
+- M1 and M2 are NMOS transistors
+- VA and VB are input voltages
+- VDD is voltage source
+- Vout is output voltage
+- PUN : Two C5NPMOS are connected in parallel
+- PDN : Two C5NNMOS are connected in series
+
+![image](https://github.com/user-attachments/assets/6d5bf3f8-c44c-45f4-b1f6-94f4bd2d2467)
+
+***Figure 11: LTspice Schematic of NAND gate***
+
+### Schematic of NOR Gate
+- M1 and M2 are PMOS transistors
+- M3 and M4 are NMOS transistors
+- VA and VB are input voltages
+- VDD is voltage source
+- Vout is output voltage
+- PUN : Two C5NPMOS are connected in series
+- PDN : Two C5NNMOS are connected in parallel
+
+![image](https://github.com/user-attachments/assets/92b27e2b-1a2b-42e5-a4c4-555122e903fb)
+
+***Figure 12: LTspice Schematic of NOR gate***
 
 # Simulation Results
 
@@ -190,15 +236,26 @@ The pulse rises from 0 to 5v. Depending on the pulse width and period settings, 
 
 ![image](https://github.com/user-attachments/assets/9c399522-1621-452f-b7f9-81a54d1d51c2)
 
-***Figure 9: Simulated waveform of AND Gate***
+***Figure 13: Simulated waveform of AND Gate***
 
 ![image](https://github.com/user-attachments/assets/ad43d981-ab06-4594-ac8c-0bf227bcce69)
 
-***Figure 10: Simulated waveform of OR Gate***
+***Figure 14: Simulated waveform of OR Gate***
 
 ![image](https://github.com/user-attachments/assets/f1db1ad2-8edb-4c54-a726-c0b860ae9479)
 
-***Figure 11: Simulated waveform of NOT Gate***
+***Figure 15: Simulated waveform of NOT Gate***
+
+![image](https://github.com/user-attachments/assets/18825024-3eaa-49f4-be1a-f7c1d2c32930)
+
+***Figure 16: Simulated waveform of NAND gate***
+
+![image](https://github.com/user-attachments/assets/749b9df2-ad16-4f3d-be9f-3f68819f8420)
+
+***Figure 17: Simulated waveform of NOR gate***
+
+
+
 
 
 
