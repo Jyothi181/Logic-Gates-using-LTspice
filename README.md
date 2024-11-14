@@ -1,6 +1,6 @@
 # Basic-Gates-using-LTspice
 
-This repository explains the implementation of Basic Gates in CMOS Logic using LTspice Simulator. This shows the schematics of Basic Gates and plot the output waveform to verify the functionality.
+This repository explains the implementation of Logic Gates in CMOS Logic using LTspice Simulator. This shows the schematics of Logic Gates and plot the output waveform to verify the functionality.
 
 # Table of Contents
 - Introduction
