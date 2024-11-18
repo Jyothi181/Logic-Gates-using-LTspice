@@ -260,7 +260,7 @@ The pulse rises from 0 to 5v. Depending on the pulse width and period settings, 
 
 
 
-
+![image](https://github.com/Jyothi181/Project-Pictures/blob/73ddfbae57c9a5d5098d021e436cb14326cee21e/pic1.png)
 
 
 
