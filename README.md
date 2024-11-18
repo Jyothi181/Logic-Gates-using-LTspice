@@ -252,12 +252,10 @@ The pulse rises from 0 to 5v. Depending on the pulse width and period settings, 
 
 ***Figure 16: Simulated waveform of NAND gate***
 
-![image](https://github.com/user-attachments/assets/749b9df2-ad16-4f3d-be9f-3f68819f8420)
+![image](https://github.com/user-attachments/assets/7289e423-7bc9-4476-93ef-fd2e08ee00f1)
+
 
 ***Figure 17: Simulated waveform of NOR gate***
-
-
-
 
 
 
