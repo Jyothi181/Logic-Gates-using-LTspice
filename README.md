@@ -146,7 +146,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 7. Give the length and width of NMOS and PMOS transistors by selecting the respective transistors.
 
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture11.png)   ![image](https://github.com/Jyothi181/Pictures/blob/main/Picture12.png)
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture11.png) ![image](https://github.com/Jyothi181/Pictures/blob/main/Picture12.png)
 
 
 ***Figure 6: Length and Width of transistors***
@@ -240,38 +240,24 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 
 The pulse rises from 0 to 5v. Depending on the pulse width and period settings, the pulse will repeat at regular intervals. The generated output is based on the applied inputs VA, VB and the logic functionality. The graphs VA - V(n002), VB - V(n003), Vout - V(vout) represent the inputs and output respectively with different colours. The simulation results verifies the functionality of circuits. 
 
-![image](https://github.com/user-attachments/assets/9c399522-1621-452f-b7f9-81a54d1d51c2)
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture19.png)
 
 ***Figure 13: Simulated waveform of AND Gate***
 
-![image](https://github.com/user-attachments/assets/ad43d981-ab06-4594-ac8c-0bf227bcce69)
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture20.png)
 
 ***Figure 14: Simulated waveform of OR Gate***
 
-![image](https://github.com/user-attachments/assets/f1db1ad2-8edb-4c54-a726-c0b860ae9479)
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture21.png)
 
 ***Figure 15: Simulated waveform of NOT Gate***
 
-![image](https://github.com/user-attachments/assets/18825024-3eaa-49f4-be1a-f7c1d2c32930)
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture22.png)
 
 ***Figure 16: Simulated waveform of NAND gate***
 
-![image](https://github.com/user-attachments/assets/7289e423-7bc9-4476-93ef-fd2e08ee00f1)
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture23.png)
 
 
 ***Figure 17: Simulated waveform of NOR gate***
-
-
-
-
-![image](https://github.com/Jyothi181/Project-Pictures/blob/73ddfbae57c9a5d5098d021e436cb14326cee21e/pic1.png)
-
-
-
-
-
-
-
-
-
 
