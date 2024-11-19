@@ -57,31 +57,32 @@ The main goal of this project are given below
 
 1. The output of AND gate produces 1 if and only if all the input states are 1 else it produces 0. The logic symbol and truth table of 2-input AND gate is shown below.
 
-![image](https://github.com/user-attachments/assets/e58eb1ee-58d5-4565-8813-a40ad05e960b)  ![image](https://github.com/user-attachments/assets/516544f5-eda3-4d6c-8f04-072f829f78d4)
-                                                                                                                                                                                                             
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture1.png)      ![image](https://github.com/Jyothi181/Pictures/blob/main/Picture2.png)
+                                                                                                                                                                                                           
 **Figure 1: Logic Symbol, Truth table and Logic Circuit of AND gate**
 
 2. The output of OR gate produces 1 if one or more input states are 1 else it produces 0. The logic symbol and truth table of 2-input OR gate is shown below.
 
-![image](https://github.com/user-attachments/assets/f43f1257-c6c0-4bfb-9b90-ab726dcbd6de)   ![image](https://github.com/user-attachments/assets/211df32d-a96f-4dee-9df7-3786fb3eb088)
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture3.png)  ![image](https://github.com/Jyothi181/Pictures/blob/main/Picture4.png)
 
 **Figure 2: Logic Symbol, Truth table and Logic Circuit of OR gate**
 
 3. The NOT gate is a digital logic device whose output is always the complement of its input. The NOT gate can be implemented in CMOS logic by connecting PMOS to VDD which acts as Pull Up Network (PUN) and NMOS is connected to ground which acts as Pull Down Network (PDN). The logic symbol, truth table and CMOS implementation of NOT gate is shown below.
 
-![image](https://github.com/user-attachments/assets/75f98793-2abf-4971-a744-4f0d1233621f)  ![image](https://github.com/user-attachments/assets/d683b441-be50-40d2-867f-ef4d74c39289)
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture5.png)    ![image](https://github.com/Jyothi181/Pictures/blob/main/Picture6.png)
 
 **Figure 3: Logic Symbol, Truth table and Logic Circuit of NOT gate**
 
 4. The output of NAND gate produces 1 if any one of the input state is 0 else it produces 0. The logic symbol and truth table of 2-input NAND gate is shown below. 
 
-![image](https://github.com/user-attachments/assets/8c880d34-7bb6-4eee-87e0-e9f333add414)   ![image](https://github.com/user-attachments/assets/ecee8dd2-9d80-4088-a16e-5aca6ef92bf6)
+
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture7.png)   ![image](https://github.com/Jyothi181/Pictures/blob/main/Picture8.png)
 
 ***Figure 4: Logic Symbol, Truth table and Logic Circuit of NAND gate***
 
 5. The output of NOR gate produces 1 if and only if all the input states are 0 else it produces 0. The logic symbol and truth table of 2-input NOR gate is shown below. 
 
-![image](https://github.com/user-attachments/assets/e0e41202-6c15-4019-87f3-a3b22d6a5cc5)   ![image](https://github.com/user-attachments/assets/07be782e-470e-44fe-bb74-e7bb7f320f1b)
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture9.png)  ![image](https://github.com/Jyothi181/Pictures/blob/main/Picture10.png)
 
 ***Figure 5: Logic Symbol, Truth table and Logic Circuit of NOR gate***
 
@@ -144,13 +145,16 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 6. Include the technology library using spice directive.
 7. Give the length and width of NMOS and PMOS transistors by selecting the respective transistors.
 
-![image](https://github.com/user-attachments/assets/e26327f6-c26f-4a68-afb4-316aeb6a8fd4)  ![image](https://github.com/user-attachments/assets/a0ded240-ca8b-4795-aa0e-8d28ffb047c7)
+
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture11.png)   ![image](https://github.com/Jyothi181/Pictures/blob/main/Picture12.png)
+
 
 ***Figure 6: Length and Width of transistors***
 
 8. To verify the transient analysis -> Click on Voltage sources and give the specific values as mentioned above in the Terms Description.
 
-![image](https://github.com/user-attachments/assets/0f1a6705-b141-4cfa-81a6-649b532400b4)
+
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture13.png)
 
 ***Figure 7: Transient Analysis values***
 
@@ -166,7 +170,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 - PDN : Two C5NNMOS are connected in series
 - The AND gate can be obtained by connecting output of NAND gate to an inverter.
 
-![image](https://github.com/user-attachments/assets/26c776f8-aa80-42a1-a93b-09903502a345)
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture14.png)
 
 ***Figure 8: LTspice Schematic of AND Gate***
 
@@ -180,7 +184,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 - PDN : Two C5NNMOS are connected in parallel
 - The OR gate can be obtained by connecting the output of NOR gate to an inverter.
 
-![image](https://github.com/user-attachments/assets/9f8fca88-708e-4f45-8e0a-c03172b4fbdf)
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture15.png)
 
 ***Figure 9: LTspice Schematic of OR Gate***
 
@@ -194,7 +198,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 - PUN : C5NPMOS
 - PDN : C5NNMOS
 
-![image](https://github.com/user-attachments/assets/bd57856a-a1a0-442e-8e61-975c2f24ce98)
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture16.png)
 
 ***Figure 10: LTspice Schematic of NOT Gate***
 
@@ -207,7 +211,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 - PUN : Two C5NPMOS are connected in parallel
 - PDN : Two C5NNMOS are connected in series
 
-![image](https://github.com/user-attachments/assets/6d5bf3f8-c44c-45f4-b1f6-94f4bd2d2467)
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture17.png)
 
 ***Figure 11: LTspice Schematic of NAND gate***
 
@@ -220,7 +224,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 - PUN : Two C5NPMOS are connected in series
 - PDN : Two C5NNMOS are connected in parallel
 
-![image](https://github.com/user-attachments/assets/92b27e2b-1a2b-42e5-a4c4-555122e903fb)
+![image](https://github.com/Jyothi181/Pictures/blob/main/Picture18.png)
 
 ***Figure 12: LTspice Schematic of NOR gate***
 
