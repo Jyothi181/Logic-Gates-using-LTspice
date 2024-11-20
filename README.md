@@ -3,11 +3,21 @@
 This repository explains the implementation of Logic Gates in CMOS Logic using LTspice Simulator. This shows the schematics of Logic Gates and plot the output waveform to verify the functionality.
 
 # Table of Contents
-- Introduction
-- Objectives
-- Project Structure
-- Circuit Details
-- LTspice Simulation
+- [Introduction](#Introduction)
+- [Objectives](#Objectives)
+- [Project Structure](#Project-Structure)
+- [Circuit Details](#Circuit-Details)
+- [LTspice Simulation](#LTspice-Simulation)
+- [Design Preparation Steps](#Design-Preparation-Steps)
+- [Day 2](#Day-2)
+	- [FloorPlan and Library Cells](#FloorPlan-and-Library-Cells)
+	- [Timing characterization](#Timing-characterization)
+- [Day 3](#Day-3)
+  - 
+- 
+- 
+- 
+- 
 - Terms Description
 - Schematics
 - Steps to draw schematics
