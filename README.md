@@ -57,32 +57,32 @@ The main goal of this project are given below
 
 1. The output of AND gate produces 1 if and only if all the input states are 1 else it produces 0. The logic symbol and truth table of 2-input AND gate is shown below.
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture1.png)      ![image](https://github.com/Jyothi181/Pictures/blob/main/Picture2.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture1.png)      ![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture2.png)
                                                                                                                                                                                                            
 **Figure 1: Logic Symbol, Truth table and Logic Circuit of AND gate**
 
 2. The output of OR gate produces 1 if one or more input states are 1 else it produces 0. The logic symbol and truth table of 2-input OR gate is shown below.
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture3.png)  ![image](https://github.com/Jyothi181/Pictures/blob/main/Picture4.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture3.png)  ![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture4.png)
 
 **Figure 2: Logic Symbol, Truth table and Logic Circuit of OR gate**
 
 3. The NOT gate is a digital logic device whose output is always the complement of its input. The NOT gate can be implemented in CMOS logic by connecting PMOS to VDD which acts as Pull Up Network (PUN) and NMOS is connected to ground which acts as Pull Down Network (PDN). The logic symbol, truth table and CMOS implementation of NOT gate is shown below.
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture5.png)    ![image](https://github.com/Jyothi181/Pictures/blob/main/Picture6.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture5.png)    ![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture6.png)
 
 **Figure 3: Logic Symbol, Truth table and Logic Circuit of NOT gate**
 
 4. The output of NAND gate produces 1 if any one of the input state is 0 else it produces 0. The logic symbol and truth table of 2-input NAND gate is shown below. 
 
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture7.png)   ![image](https://github.com/Jyothi181/Pictures/blob/main/Picture8.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture7.png)   ![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture8.png)
 
 ***Figure 4: Logic Symbol, Truth table and Logic Circuit of NAND gate***
 
 5. The output of NOR gate produces 1 if and only if all the input states are 0 else it produces 0. The logic symbol and truth table of 2-input NOR gate is shown below. 
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture9.png)  ![image](https://github.com/Jyothi181/Pictures/blob/main/Picture10.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture9.png)  ![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture10.png)
 
 ***Figure 5: Logic Symbol, Truth table and Logic Circuit of NOR gate***
 
@@ -146,7 +146,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 7. Give the length and width of NMOS and PMOS transistors by selecting the respective transistors.
 
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture11.png) ![image](https://github.com/Jyothi181/Pictures/blob/main/Picture12.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture11.png) ![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture12.png)
 
 
 ***Figure 6: Length and Width of transistors***
@@ -154,7 +154,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 8. To verify the transient analysis -> Click on Voltage sources and give the specific values as mentioned above in the Terms Description.
 
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture13.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture13.png)
 
 ***Figure 7: Transient Analysis values***
 
@@ -170,7 +170,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 - PDN : Two C5NNMOS are connected in series
 - The AND gate can be obtained by connecting output of NAND gate to an inverter.
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture14.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture14.png)
 
 ***Figure 8: LTspice Schematic of AND Gate***
 
@@ -184,7 +184,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 - PDN : Two C5NNMOS are connected in parallel
 - The OR gate can be obtained by connecting the output of NOR gate to an inverter.
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture15.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture15.png)
 
 ***Figure 9: LTspice Schematic of OR Gate***
 
@@ -198,7 +198,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 - PUN : C5NPMOS
 - PDN : C5NNMOS
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture16.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture16.png)
 
 ***Figure 10: LTspice Schematic of NOT Gate***
 
@@ -211,7 +211,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 - PUN : Two C5NPMOS are connected in parallel
 - PDN : Two C5NNMOS are connected in series
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture17.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture17.png)
 
 ***Figure 11: LTspice Schematic of NAND gate***
 
@@ -224,7 +224,7 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 - PUN : Two C5NPMOS are connected in series
 - PDN : Two C5NNMOS are connected in parallel
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture18.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture18.png)
 
 ***Figure 12: LTspice Schematic of NOR gate***
 
@@ -240,23 +240,23 @@ So, with the given inputs, the voltage source will start at 0V, then immediately
 
 The pulse rises from 0 to 5v. Depending on the pulse width and period settings, the pulse will repeat at regular intervals. The generated output is based on the applied inputs VA, VB and the logic functionality. The graphs VA - V(n002), VB - V(n003), Vout - V(vout) represent the inputs and output respectively with different colours. The simulation results verifies the functionality of circuits. 
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture19.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture19.png)
 
 ***Figure 13: Simulated waveform of AND Gate***
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture20.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture20.png)
 
 ***Figure 14: Simulated waveform of OR Gate***
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture21.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture21.png)
 
 ***Figure 15: Simulated waveform of NOT Gate***
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture22.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture22.png)
 
 ***Figure 16: Simulated waveform of NAND gate***
 
-![image](https://github.com/Jyothi181/Pictures/blob/main/Picture23.png)
+![image](https://github.com/Jyothi181/Logic-Gates-using-LTspice/blob/main/Logic_Gates_Images/Picture23.png)
 
 
 ***Figure 17: Simulated waveform of NOR gate***
