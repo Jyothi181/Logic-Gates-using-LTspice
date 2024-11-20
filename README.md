@@ -3,31 +3,23 @@
 This repository explains the implementation of Logic Gates in CMOS Logic using LTspice Simulator. This shows the schematics of Logic Gates and plot the output waveform to verify the functionality.
 
 # Table of Contents
+- # Table of Contents
 - [Introduction](#Introduction)
 - [Objectives](#Objectives)
 - [Project Structure](#Project-Structure)
 - [Circuit Details](#Circuit-Details)
 - [LTspice Simulation](#LTspice-Simulation)
-- [Schematics](#Schematics)
-    - [Steps to draw schematics](Steps-to-draw-schematics)
-    - [Schematic of AND Gate](Schematic-of-AND-Gate)
-    - 
-  - 
-- 
-- 
-- 
-- 
-- Terms Description
-- Schematics
-- Steps to draw schematics
-- Schematic of AND Gate
-- Schematic of OR Gate
-- Schematic of NAND Gate
-- Schematic of NOR Gate
-- Schematic of NOT Gate
-- Simulation Results
-- How to simulate
-- Results
+     - [Terms Description](#Terms-Description)
+     - [Schematics](#Schematics)
+       - [Steps to draw schematics](#Steps-to-draw-schematics)
+       - [Schematic of AND Gate](#Schematic-of-AND-Gate)
+       - [Schematic of OR Gate](#Schematic-of-OR-Gate)
+       - [Schematic of NOT Gate](#Schematic-of-NOT-Gate)
+       - [Schematic of NAND Gate](#Schematic-of-NAND-Gate)
+       - [Schematic of NOR Gate](#Schematic-of-NOR-Gate)
+- [Simulation Results](#Simulation-Results)
+     - [How to simulate](#How-to-simulate)
+     - [Results](#Results)
 
 # Introduction
 **Logic Gate:** A logic gate is a device that performs logical operations on one or more binary inputs and produces a single binary output. The primary way of building logic gates uses diodes or transistors acting as electronic switches. Today, most logic gates are made from MOSFETs (metal–oxide–semiconductor field-effect transistors). Logic circuits include such devices as multiplexers, registers, arithmetic logic units (ALUs), computer memory and microprocessors which may contain more than 100 million logic gates.
